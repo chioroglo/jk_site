@@ -5,3 +5,4 @@ This is my first pet project. I have created a website using Figma template, con
 * JQuery
 * PHP ( for performing requests to local database )
 * Open Weather Map API ( https://rapidapi.com/community/api/open-weather-map/ )
+* Google Maps API
