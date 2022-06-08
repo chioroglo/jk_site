@@ -1,0 +1,25 @@
+.origins {
+    display:block;
+    height:500px;
+    background-image: url('../images/origins/wood_bg.png');
+    background-size:100%;
+    color:#FFFFFF;
+    padding-top:200px;
+    padding-left:150px;
+}
+
+.origins h1 {
+    position: relative;
+    left:-30%;
+}
+
+.origins span {
+    
+    position: relative;
+    left:-50%;
+    
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+}

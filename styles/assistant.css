@@ -1,0 +1,45 @@
+.assistant {
+    color:#FFFFFF;
+    background-color: #314C51;
+    display:flex;
+    justify-content: space-around;
+    padding:50px;
+}
+
+.assistant > div {
+    margin:25px;
+}
+
+.assistant-image img {
+    width:600px;
+    height:600px;
+    border-radius: 122px;
+}
+
+.assistant-contacts-buttons {
+    margin:5px;
+}
+
+.assistant-contacts-buttons > a {
+    margin:0 10px;
+    width:30px;
+    height:30px;
+}
+
+.assistant-bg-logo {
+    position: relative;
+}
+
+.assistant-bg-logo > img {
+    position: absolute;
+    left:50vw;
+    top:10vh;
+}
+
+.assistant-bg-logo span {
+    position:absolute;
+    color: rgba(255,255,255,0.1);
+    left:55vw;
+    top:10vh;
+    font-size: 324px;
+}

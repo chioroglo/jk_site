@@ -1,0 +1,23 @@
+footer {
+    background: #1D1F1D;
+    font-size: 12px;
+    color:#FFFFFF;
+    line-height: 16px;
+    padding:20px;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+footer span {
+    font-weight: 600;
+}
+.footer-flexbox {
+    display:flex;
+    justify-content: space-around;
+}
+
+.footer-flexbox > div > * {
+}

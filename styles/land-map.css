@@ -1,0 +1,221 @@
+/* background-image: linear-gradient(180deg, rgba(255,255,255,1), rgba(0,0,0,0)); */
+
+.land-map {
+    background-color: #AFAB4A;
+    position: relative;
+}
+
+
+
+.land-map img {
+    width: 100%;
+    height:100%;
+}
+
+.land-map img:after {
+    background-image: linear-gradient(180deg, rgba(255,255,255,1), rgba(0,0,0,0));
+}
+
+.middle_map_svg_only {
+    position: relative;
+    top:34px;
+    left:0px;
+}
+
+#circle_svg {
+    position: absolute;
+    left:-10px;
+    top:100px;
+    height:250px;
+}
+
+
+/* parallax */
+
+.parallax-scene {
+    overflow: hidden;
+    min-height:100vh;
+    max-width: 100vw;
+    position:relative;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+}
+
+.parallax-scene__layer {
+    position: relative;
+}
+
+.forest {
+    min-width: 100vw;
+    min-height:inherit;
+}
+
+.cloud {
+    position: absolute;
+}
+
+/* cloud positioning */
+
+
+.parallax-scene__layer:nth-child(2) {
+    left:80%;
+    top:50vh;
+}
+
+.parallax-scene__layer:nth-child(2) img {
+    transform:rotate(90deg);
+}
+
+.parallax-scene__layer:nth-child(3) {
+    left:-10%;
+    top:30vh;
+}
+
+.parallax-scene__layer:nth-child(3) img {
+    transform:rotate(45deg);
+}
+
+.parallax-scene__layer:nth-child(4) {
+    left:0%;
+    top:90vh;
+}
+
+.parallax-scene__layer:nth-child(4) img {
+    transform:rotate(275deg);
+}
+
+.parallax-scene__layer:nth-child(5) {
+    left:10%;
+    top:-80vh;
+}
+
+.parallax-scene__layer:nth-child(5) img {
+    transform:rotate(125deg);
+}
+
+.parallax-scene__layer:nth-child(6) {
+    left:45%;
+    top:-80vh;
+}
+
+.parallax-scene__layer:nth-child(6) img {
+    transform:rotate(0deg);
+}
+
+/* cloud positioning end */
+
+
+/* svg art map */
+
+.land-selection-map {
+    position: absolute;
+    top: 1635px;
+    right: 28vw;
+    z-index: 1;
+}
+
+.land-selection-map img:nth-child(1) {
+    position: relative;
+    width: 822px;
+    height: 919px;
+}
+
+.land-selection-map img:nth-child(2) {
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    left: 540px;
+    top: 23px;
+
+}
+
+.land-selection-map img:nth-child(3) {
+    position: absolute;
+    width: 150px;
+    height: 180px;
+    left: 613px;
+    top: 151px;
+}
+
+.land-selection-map img:nth-child(4) {
+    position: absolute;
+    width: 216px;
+    height: 178px;
+    left: 528px;
+    top: 347px;
+
+}
+
+.land-selection-map img:nth-child(5) {
+    position: absolute;
+    width: 217px;
+    height: 216px;
+    left: 439px;
+    top: 477px;
+}
+
+.land-selection-map img:nth-child(6) {
+    position: absolute;
+    width: 164px;
+    height: 230px;
+    left: 460px;
+    top: 658px;
+
+}
+
+.land-selection-map img:nth-child(7) {
+    position: absolute;
+    width: 187px;
+    height: 197px;
+    left: 304px;
+    top: 557px;
+}
+
+.land-selection-map img:nth-child(8) {
+    position: absolute;
+    width: 257px;
+    height: 277px;
+    left: 174px;
+    top: 294px;
+}
+
+.land-selection-map img:nth-child(9) {
+    position: absolute;
+    width: 257px;
+    height: 277px;
+    left: 322px;
+    top: 238px;
+}
+
+.land-selection-map img:nth-child(10) {
+    position: absolute;
+    width: 237px;
+    height: 137px;
+    left: 324px;
+    top: 45px;
+}
+
+.land-selection-map img:nth-child(11) {
+    position: absolute;
+    width: 253px;
+    height: 253px;
+    left: 89px;
+    top: 10px;
+}
+
+
+.land-selection-map img:nth-child(12) {
+    position: absolute;
+    width: 288px;
+    height: 282px;
+    left: 41px;
+    top: 192px;
+}
+
+.land-selection-map span {
+    font-size:64px;
+    line-height: 120%;
+    position: absolute;
+}

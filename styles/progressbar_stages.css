@@ -1,0 +1,166 @@
+
+.progressbar_stages {
+    margin: 10vh 10vw;
+}
+
+.progress-container {
+    display:flex;
+    justify-content: space-between;;
+    position: relative;
+    margin:40px 0;
+    max-width:100%;
+    width:100vw;
+}
+
+.progress-container::before {
+    background-color: #AAAAAA;
+    content:'';
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    height:5px;
+    width:100%;
+    z-index: -1;
+    transition: 0.2s ease;
+}
+
+.progress {
+    display:inline;
+    position: relative;
+    background-color: #314c51;
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    height:5px;
+    width:0%;
+    z-index: -1;
+    overflow:visible;
+    transition: 4s ease;
+}
+
+.progress::after {
+
+    /*content: '0'; */
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    background-image: url("../images/progressbar/cloud.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    padding-top:10px;
+    right:-50px;
+    bottom:10px;
+    width:75px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+}
+
+.circle {
+    position: relative;
+    background-color: #AAAAAA;
+    color:#DDDDDD;
+    border-radius: 50%;
+    height:30px;
+    width:30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: 4s ease;
+}
+
+.mini-circle {
+    position: relative;
+    background-color: #AAAAAA;
+    border-radius: 50%;
+    height:15px;
+    width:15px;
+    align-self: center;
+    transition: 4s ease;
+}
+.active {
+    background-color: #314C51;
+}
+
+.stage-information {
+    display:flex;
+    justify-content: space-between;
+}
+.stage-card {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* stage names */
+.progress-container > *::after {
+    color:#999999;
+    font-size:12px;
+}
+
+.progress-container > *:nth-child(2)::after {
+    content:'0%';
+    font-weight: 600;
+    top:-20px;
+    left:5px;
+    position:absolute;
+}
+
+
+.progress-container > *:nth-child(2n+3)::after {
+    content:'';
+    font-weight: 300;
+    top:-35px;
+    left:5px;
+    position:absolute;
+}
+
+.progress-container > *:nth-child(2n)::after {
+    content:'';
+    font-weight: 300;
+    bottom:-35px;
+    left:5px;
+    position:absolute;
+}
+
+.progress-container > *:last-child::after {
+    content:'100%';
+    font-weight: 600;
+    top:-35px;
+    left:5px;
+    position:absolute;
+}
+
+.progress-container > *:nth-child(3)::after {
+    content: 'Геология';
+}
+
+.progress-container > *:nth-child(4)::after {
+    content: 'Геодезия';
+}
+
+.progress-container > *:nth-child(5)::after {
+    content: 'Дендрология';
+}
+
+.progress-container > *:nth-child(7)::after {
+    content: 'Коммуникации';
+}
+
+.progress-container > *:nth-child(8)::after {
+    content: 'Проектирование дорог';
+}
+
+.progress-container > *:nth-child(10)::after {
+    content: 'Подготовка участков';
+}
+
+.progress-container > *:nth-child(10)::after {
+    content: 'Строительство коммуникаций';
+}
+
+.progress-container > *:nth-child(11)::after {
+    content: 'Строительство дорог';
+}

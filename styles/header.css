@@ -1,0 +1,34 @@
+header {
+    font-size: 600;
+    background-color: #FFFFFF;
+}
+.header__icons {
+    display:flex;
+    padding: 15px 0;
+}
+
+
+.header__icons > * {
+    margin:auto;
+}
+
+#header__icons__mainLogo {
+    flex-basis:50%;
+    display:flex;
+    justify-content: center;
+}
+
+.header__navbar {
+    margin: 0 5%;
+    padding:20px;
+    display:flex;
+    justify-content: space-around;
+
+    border-bottom : 1px solid black;
+    border-top : 1px solid black;
+}
+
+.header__navbar > div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

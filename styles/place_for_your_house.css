@@ -1,0 +1,24 @@
+.place_for_your_house {
+    margin: 10%;    
+}
+
+.pr-info {
+    display:flex;
+    justify-content: space-between;
+}
+
+.pr-info > ul {
+    margin: auto 0;
+    font-size: 18px;
+}
+
+.pr-info > ul > li {
+    display:none;
+}
+
+.pr-info > img {
+    
+    position: relative;
+    left:-100%;
+    top:0px;
+}

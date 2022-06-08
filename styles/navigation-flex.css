@@ -1,0 +1,51 @@
+.infrastructure {
+    padding: 10vh 10vw;
+    background-color: #F7F4F4;
+}
+
+.navigation-flex {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav__card {
+    margin: 1vh 3vw;
+    cursor: pointer;
+    transition: color 4s;
+}
+
+.infrastructure-slider {
+    margin-top: 100px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.infrastructure-slider__screen {
+    width:640px;
+    height:480px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    left:0%;
+    opacity:1;
+
+}
+
+.infrastructure-slider__buttons {
+    width:20vw;
+}
+
+.slider__buttons {
+    margin-top:5vh;
+    display:flex;
+    justify-content: space-around;
+}
+
+.slider__buttons img:nth-child(2) {
+    transform: rotate(180deg);
+}
+
+.current {
+    font-weight: 600;
+}

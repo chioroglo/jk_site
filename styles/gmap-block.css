@@ -1,0 +1,23 @@
+.gmap-block {
+    margin: 0 10vw;
+}
+
+.gmap-block__flex-header {
+    display:flex;
+    justify-content: space-between;
+}
+
+.gmap-block__flex-header span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    align-self: center;
+    text-decoration: underline;
+    color: #1D1F1D;
+    line-height: 40px;
+}
+
+.gmap-block iframe {
+    border-radius: 5%;
+}

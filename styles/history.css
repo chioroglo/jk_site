@@ -1,0 +1,30 @@
+.history {
+    margin:10vh 10vw;
+}
+
+.history-flex {
+    display:flex;
+    justify-content: space-between;
+}
+
+.history-annotation_card {
+    width:20vw;
+    height:40vh;
+}
+
+.history-annotation_card:nth-child(3) {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.history h1 {
+    font-weight: 400;
+    font-size: 64px;
+}
+
+
+.history h2 {   
+    font-weight: 600;
+    font-size: 22px;
+}

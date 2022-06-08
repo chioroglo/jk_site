@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/cover.css">
+    <link rel="stylesheet" href="styles/land-menu.css">
+    <link rel="stylesheet" href="styles/land-map.css">
+    <link rel="stylesheet" href="styles/place_for_your_house.css">
+    <link rel="stylesheet" href="styles/land-popup.css">
+    <link rel="stylesheet" href="styles/origins.css">
+    <link rel="stylesheet" href="styles/history.css">
+    <link rel="stylesheet" href="styles/navigation-flex.css">
+    <link rel="stylesheet" href="styles/gmap-block.css">
+    <link rel="stylesheet" href="styles/team-info.css">
+    <link rel="stylesheet" href="styles/progressbar_stages.css">
+    <link rel="stylesheet" href="styles/documents.css">
+    <link rel="stylesheet" href="styles/hike.css">
+    <link rel="stylesheet" href="styles/assistant.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/header/logo.svg" />
+    <title>JK</title>
+</head>
+<script src="script/jquery-3.6.0.js"></script>
+<script src="script/progressbar_handler.js"></script>
+<body>
+
+    <header>
+        <div class="header__icons">
+            <div>
+                <a href="https://www.facebook.com/alexander.kioroglo/" target="_blank"><img src="images/header/facebook_logo_20x20.svg" alt=""></a>
+                <a href="https://www.instagram.com/1937nkvd/" target="_blank"><img src="images/header/instagram_logo_20x20.svg" alt=""></a>
+            </div>
+            <a id="header__icons__mainLogo" href=""><img src="images/header/logo.svg" alt=""></a>
+           
+            <div>
+                <a href="tel:+375 29 292-29-29"><img src="images/header/cellphone_16x16.svg" alt=""></a>
+                <div class="language-selection">
+                    <select>
+                        <option>Ru</option>
+                        <option>En</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+            <div class="header__navbar">
+                <div class="header__navbar__button">
+                    Участки
+                </div>
+                <div class="header__navbar__button">
+                    Место
+                </div>
+                <div class="header__navbar__button">
+                    История
+                </div>
+                <div class="header__navbar__button">
+                    Этапы
+                </div>
+
+                <div class="header__navbar__button">
+                    Команда
+                </div>
+                
+                <div class="header__navbar__button">
+                    Документы
+                </div>
+
+                <div class="header__navbar__button">
+                    Прогулка
+                </div>
+            </div>
+    </header>
+
+    <div class="cover">
+        <div class="cover__video__wrapper">           
+            <video autoplay loop muted>
+                <source src="images/cover/bg_video.mp4" type="video/mp4">
+            </video>
+            <span class="cover__video__wrapper-text">11</span>
+        </div>
+
+        <div class="cover__buttons-shortinfo">
+            <span>
+                Жилой район в <br> Магадане
+            </span>
+            
+            <span>
+                Одиннадцать приватных участков с собственным лесом
+            </span>
+
+            <button><a href="index.html">Участки</a></button>
+        </div>
+
+    </div>
+
+        <div class="crossover-transition">
+            <span>Üksteist это </span>
+             <div class="crossover-transition-flex-description">
+                <div class="card">
+                    <img src="images/land-menu/forest.svg" alt="">
+                    <h1>Лес</h1>
+                    <h2>Жизнь в окружении леса</h2>
+                </div>
+                <div class="card">
+                    <img src="images/land-menu/see.svg" alt="">
+                    <h1>Море</h1>
+                    <h2>В 311 метрах от дома ваше море</h2>
+                </div>
+                <div class="card">
+                    <img src="images/land-menu/air.svg" alt="">
+                    <h1>Воздух</h1>
+                    <h2>Вдыхайте морской и хвойный воздух</h2>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="land-map">
+        <script src="script/parallax.js"></script>
+        <img src="images/land-menu/rectangle_sea_transition.png" alt="">
+        
+        <div class="middle_map_svg_only">
+            <img src="images/land-menu/houses_plan.svg"> 
+            <img id="circle_svg" src="images/land-menu/circle_sea.svg">
+        </div>
+
+        <script src="script/plot_selection_menu.js"></script>
+
+        <div class="land-popup">
+            <ul>
+
+                <li>Участок <span>no.</span></li>
+                <li>Площадь участка: <span>m2</span></li>
+                <li>Площадь застройки: <span>m2</span></li>
+                <li>Адрес: <span>no_data</span></li>
+                <li>Стоимость: <span>no_data</span></li>
+
+                <button><a href="index.html">Просмотреть</a></button>
+
+                <span id="isbought_flag"></span>
+            </ul>
+        </div>
+
+        <div class="land-selection-map">
+            <img src="images/land-menu/svg_lands_collection/frame.svg" alt="">
+            <img onclick="displayPlotInfo(event,1)" src="images/land-menu/svg_lands_collection/frame1.svg" alt="">
+            <img onclick="displayPlotInfo(event,2)" src="images/land-menu/svg_lands_collection/frame2.svg" alt="">
+            <img onclick="displayPlotInfo(event,3)" src="images/land-menu/svg_lands_collection/frame3.svg" alt="">
+            <img onclick="displayPlotInfo(event,4)" src="images/land-menu/svg_lands_collection/frame4.svg" alt="">
+            <img onclick="displayPlotInfo(event,5)" src="images/land-menu/svg_lands_collection/frame5.svg" alt="">
+            <img onclick="displayPlotInfo(event,6)" src="images/land-menu/svg_lands_collection/frame6.svg" alt="">
+            <img onclick="displayPlotInfo(event,7)" src="images/land-menu/svg_lands_collection/frame7.svg" alt="">
+            <img onclick="displayPlotInfo(event,8)" src="images/land-menu/svg_lands_collection/frame8.svg" alt="">
+            <img onclick="displayPlotInfo(event,9)" src="images/land-menu/svg_lands_collection/frame9.svg" alt="">
+            <img onclick="displayPlotInfo(event,10)" src="images/land-menu/svg_lands_collection/frame10.svg" alt="">
+            <img onclick="displayPlotInfo(event,11)" src="images/land-menu/svg_lands_collection/frame11.svg" alt="">
+        </div>
+
+        <div class="parallax-scene">
+
+            <div class="parallax-scene__layer forest">
+                <img src="images/land-menu/parallax/forest_plan.png" alt="">
+            </div>
+
+            <div class="parallax-scene__layer cloud">
+                <img  src="images/land-menu/parallax/clouds.png" alt="">
+            </div>
+
+            <div class="parallax-scene__layer cloud">
+                <img  src="images/land-menu/parallax/clouds.png" alt="">
+            </div>
+
+            <div class="parallax-scene__layer cloud">
+                <img  src="images/land-menu/parallax/clouds.png" alt="">
+            </div>
+
+            <div class="parallax-scene__layer cloud">
+                <img  src="images/land-menu/parallax/clouds.png" alt="">
+            </div>
+
+            <div class="parallax-scene__layer cloud">
+                <img  src="images/land-menu/parallax/clouds.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="script/smooth_appearal_of_blocks.js"></script>
+    <div class="place_for_your_house">
+        <h1>Место для <br/> вашего дома</h1>
+
+        <div class="pr-info">
+            <img src="images/place_for_your_house/landscape.png" alt="">
+
+            <ul>
+                <li>Возможно здесь вы построите свой дом!</li>
+                <li>В окружении заповедного леса</li>
+                <li>В тихом и спокойном месте</li>
+                <li>В 22 минутах от Магадана</li>
+                <li>В 311 метрах от моря</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class ="origins">
+        <h1>Истоки</h1>
+        <span> Эта земля формировалась больше 11 миллиардов лет. <br> 11 семей построят здесь 11 современных домов. </span>
+    </div>
+
+    <div class = "history">
+        <h1>История</h1>
+        <h2>Часть вашей жизни</h2>
+
+        <div class="history-flex">
+            <div class="history-annotation_card">Лес появился на земле раньше человека. Он хранит в своих корнях историю и делится с нами своим спокойствием. В каждом лесу есть что-то особенное, и оно бесценно. Для тех, кто осознанно подходит к выбору жилого пространства, дом -это не просто место, где можно провести время в промежутках между работой. Это место восстановления сил и наполнения новой энергией. Дом в окружении леса дарит настоящее умиротворение, забирает наши тревоги, взамен даруя спокойствие и уверенность. В нашем мире всё неустанно стремится к обновлению- в этом залог самой жизни. </div>
+            <div class="history-annotation_card">Мир, как внешний, так и внутренний находится в постоянном движении. Мы стремимся к постижению ценности и уникальности каждого прожитого мгновения. К развитию чувствительности к мельчайшим изменениям в потоке жизни. В условиях избытка событий внешних, мы упускаем глубину событий внутренних. Прогулка в лесу или по берегу моря возвращает нас к нам самим. Познакомившись с этой уникальной землей, мы захотели внести вклад в ее эволюцию.</div>
+            <div class="history-annotation_card">В создание нового этапа жизни для большого участка земли. Создать особенный жилой район в окружении природы. Аккуратно и бережно интегрировать новейшие технические возможности в дикую природу, уравновешивая многовековую историю, настоящее и будущее. Возможно именно с этим местом будет крепко связана часть вашей счастливой жизни.<br>
+            <button><a href="#">Участок</a></button> 
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script/infrastructure_slider.js"></script>
+    <div class="infrastructure">
+            <h1>Инфраструктура</h1>
+
+
+            <div class="navigation-flex">
+                <div onclick="infrastructure_slider($(this))" class="nav__card current">Новые дороги</div>
+                <div onclick="infrastructure_slider($(this))" class="nav__card">Уличное освещение</div>
+                <div onclick="infrastructure_slider($(this))" class="nav__card">Маяк</div>
+                <div onclick="infrastructure_slider($(this))" class="nav__card">Забор</div>
+                <div onclick="infrastructure_slider($(this))" class="nav__card">Общая зона</div>
+                <div onclick="infrastructure_slider($(this))" class="nav__card">Скамейки с крышей</div>
+                <div onclick="infrastructure_slider($(this))" class="nav__card">Дорожка</div>
+                <div onclick="infrastructure_slider($(this))" class="nav__card">Детская площадка</div>
+                <div onclick="infrastructure_slider($(this))" class="nav__card">Песочница</div>
+                <div onclick="infrastructure_slider($(this))" class="nav__card">Входная группа</div>
+                <div onclick="infrastructure_slider($(this))" class="nav__card">Коммуникации</div>
+                <div onclick="infrastructure_slider($(this))" class="nav__card">Лес</div>
+                <div onclick="infrastructure_slider($(this))" class="nav__card">Ваш участок</div>
+            </div>
+
+
+            <div class="infrastructure-slider">
+                <div class="infrastructure-slider__screen" style="background-image: url('images/infrastructure-slider/slidercard_0.jpg');">
+                </div>
+                
+                <div class="infrastructure-slider__buttons">
+                    <h2>Новые дороги</h2>
+                    <span>Европейские дороги на каждой улице</span>
+                    <br>
+                    
+                    <div class="slider__buttons">
+
+                        <img onclick="infrastructure_slider($('.nav__card.current').prev())" src="images/infrastructure-slider/arrow.svg" alt="">
+                        <img onclick="infrastructure_slider($('.nav__card.current').next())" src="images/infrastructure-slider/arrow.svg" alt="">
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <div class="progressbar_stages">
+        <h1>Этап</h1>
+        <h2>Срок реализации</h2>
+
+
+        <div class="container">
+            <div class="progress-container">
+                <div class="progress" id="progress"></div>
+
+                <div class="circle active">1</div>
+                <div class="mini-circle"></div>
+                <div class="mini-circle"></div>
+                <div class="mini-circle"></div>
+                
+                <div class="circle">2</div>
+                <div class="mini-circle"></div>
+                <div class="mini-circle"></div>
+                
+                <div class="circle">3</div>
+                <div class="mini-circle"></div>
+                <div class="mini-circle"></div>
+
+                <div class="circle">4</div>
+            </div>
+        </div>
+
+        <div class="stage-information">
+            <div class="stage-card">Подготовительные работы</div>
+            <div class="stage-card">Проектирование дорог</div>
+            <div class="stage-card">Строительство дорог</div>
+            <div class="stage-card">Инфраструктура готова!</div>
+        </div>
+    </div>
+
+    <div class="team-info">
+        <div class="team-info__bg-logo">
+            <span>11</span>
+            <img src="images/team-info/Vector 73.svg" alt="">
+        </div>
+        <h1>Команда</h1>
+        <h2>Участок бережно подготовят:</h2>
+
+        <div class="companies">
+            <ol>
+            <li>Разработка и концепция проекта <span>Team Media OÜ в лице Dmitri Vain</span><br></li>
+            <li>Финансирование проекта <span>Estateguru OÜ</span><br></li>
+            <li>Дендрология <span>Aquaplant Design OÜ</span><br></li>
+            <li>Геодезия - <span>Geodeesia24 OÜ</span><br></li>
+            <li>Геология - <span>Maves OÜ</span><br></li>
+            <li>Проектирование коммуникаций и дорог <span>Skepast&Puhkim OÜ</span><br></li>
+            <li>Визуализация и проектирование <span>Dmitri Kulakov</span><br></li>
+            <li>Веб дизайн  и фото: <span>Aleksandr Grusha, Sergey Smirnov</span><br></li>
+            <li>Строительство Дорог и коммуникаций : <span>В ПРОЦЕССЕ ВЫБОРА</span><br></li>
+            <li>Архитектурное бюро <span>VNDL ARHITEKTUUR OÜ</span><br></li>
+            <li>Продажа участков <span>Svetlana Davidovski</span><br></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="documents">
+
+        <div class="documents-popup">
+            <h2>Отправьте докумeнты на <br> свою почту</h2>
+            <input placeholder="Ваш e-mail" type="text">
+            <span>Нажимая кнопку «Отправить», Вы даёте согласие на <u>обработку ваших персональных данных.</u></span>
+            <button>Отправить на почту</button>
+        </div>
+        <h1>Документы</h1>
+        <h2>Документы для скачивания</h2>
+
+        <div class="doc-button__container">
+            <div class="doc-button"> <img src="images/documents/download_icon.svg">Геодезия</div>
+            <div class="doc-button"> <img src="images/documents/download_icon.svg">Геология</div>
+            <div class="doc-button"> <img src="images/documents/download_icon.svg">Дендрология</div>
+            <div class="doc-button"> <img src="images/documents/download_icon.svg">План застройки</div>
+            <div class="doc-button"> <img src="images/documents/download_icon.svg">Общая презентация</div>
+            <div class="doc-button"> <img src="images/documents/download_icon.svg">Айдентика</div>
+        </div>
+    </div>
+
+
+    <script src="script/weather_api.js"></script>
+    <div class="gmap-block">
+        <div class="gmap-block__flex-header">
+            <h1>Место</h1>
+            
+            <span> 
+                <img src="images/gmap-block/marker.svg" alt="">str. Lenin 1/22<br>
+                Текущая температура: <span id="temperature">&#176C</span>
+            </span>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22388.650432297607!2d150.89523469796302!3d59.55816375884103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x596a282125b799d1%3A0x40727ad659f77ce2!2z0JfQvtC90LAg0L7RgtC00YvRhdCwICLQk9C-0YDQvdGP0Loi!5e0!3m2!1sru!2s!4v1648290657100!5m2!1sru!2s" width="1200px" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    
+    <div class="hike">
+        <video autoplay loop muted>
+            <source src="images/documents/hike.mp4"> 
+        </video>
+
+        <div class="hike-info">
+            <h1>Прогулка</h1>
+            <h2>Запланируйте прогулку в выходные по чудесному лесу!</h2>
+            <button>Построить маршрут</button>
+        </div>
+    </div>
+
+    <div class="assistant">
+        <div class="assistant-bg-logo">
+            <span>11</span>
+            <img src="images/team-info/Vector 73.svg" alt="">
+        </div>
+
+            <div class="assistant-image">
+                <img src="images/assistant/assistant_photo.jpg" alt="">
+            </div>
+
+            <div class="assistant-info">
+                <h2>Ваш персональный помощник в покупке участка:</h2>
+                <h3>Tacitus Olbany</h3>
+
+                <span class="assistant-mail"> <img src="images/assistant/mail_10x10.svg" alt=""> kioroglomobster@gmail.com</span>
+                <br/>
+                <br/>
+                <span class="phone-number"> <img src="images/assistant/cellphone_10x10.svg" alt=""> +373 780 388 87</span>
+
+                <div class="assistant-contacts-buttons">
+                    <a href="https://t.me/nkvd1937" target="_blank"><img src="images/assistant/telegram_30x30.svg" alt=""></a>
+                    <a href="#"><img src="images/assistant/cellphone_30x30.svg" alt=""></a>
+                    <a href="#"><img src="images/assistant/viber_30x30.svg" alt=""></a>
+                </div>
+            </div>
+    </div>
+
+    <footer>
+        <div class="footer-flexbox">
+            <div class="footer-contacts">
+
+                <span>Контакты</span><br/>
+
+                Team Media OU<br/>
+                Harjumaa, Tallinn linn, Tulika põik 4, 10613<br/>
+                Тел.: 58205581<br/>
+                E-mail: dmitri.vain@gmail.com<br/>
+                Регистрационый код 14268077<br/>
+                <a style="margin-right:20px;" href=""><img src="images/footer/facebook_20x20.svg" alt=""></a>
+                <a href=""><img src="images/footer/instagram_20x20.svg" alt=""></a>
+            </div>
+    
+            <div class="footer-logo">
+                <img src="images/footer/company_logo_130x115.svg" alt="">
+            </div>
+    
+            <div class="footer-assistant">
+                 <span>Ваш персональный <br/>помощник в покупке участка:</span><br/>
+                Tacitus Olbany<br/>
+                +373 780 388 87<br/>
+
+                <a href="#">Telegram</a>
+                <a href="#">WhatsApp</a>
+                <a href="#">Viber</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
