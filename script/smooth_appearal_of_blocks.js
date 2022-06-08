@@ -1,7 +1,7 @@
 "use strict";
 
-
-function block_appearal() { // for place_for_your_house
+// for place_for_your_house
+function block_appearal() {
 
     $('.pr-info img').animate( {left:"0%"},2000);
     
@@ -10,7 +10,6 @@ function block_appearal() { // for place_for_your_house
         $('.pr-info ul li:nth-child(' + index + ')').fadeIn(index*1000);
     }
 }
-
 
 $(document).bind('scroll', function() {
     var scrollOffset = $(document).scrollTop();
@@ -24,6 +23,7 @@ $(document).bind('scroll', function() {
 });
 
 
+// for ORIGINS
 $(document).bind('scroll', function() {
     var scrollOffset = $(document).scrollTop();
     var containerOffset = $('.origins').offset().top  - window.innerHeight/2.0;
@@ -36,6 +36,8 @@ $(document).bind('scroll', function() {
     }
 });
 
+
+// for progressbar handling
 $(document).bind('scroll', function() {
   var scrollOffset = $(document).scrollTop();
   var containerOffset = $('.progressbar_stages').offset().top  - window.innerHeight/2.0;

@@ -1,8 +1,6 @@
 
 .land-popup {
     position: absolute;
-    /* top: 1900px;
-    left:300px; */
     top:0px;
     left:0px;
 
@@ -44,16 +42,11 @@
     font-size:14px;
 }
 
-.land-popup span {
+#isbought_flag {
     color: #F8F8F8;
     font-weight: 500;
     float:right;
-    font-size:14px;
-}
-
-#isbought_flag {
-    padding-top: 10px;
-    padding-right: 54px;
+    font-size:14px;    
 }
 
 .land-popup li:first-child {
